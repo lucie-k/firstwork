@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maison A louer</title>
+    </head>
+    <body>
+        <h1>SOUHAITEZ VOUS RESERVER UNE PLACE DANS MON BUS?</h1>
+        <form action="/etudiants/predire/" method="POST">
+            {% csrf_token %}
+            <label>montant </label>
+            <input type="number" name="montant"/><br><br>
+            <label>genre</label>
+            <input type="radio" name="genre" value="1">homme</input>
+            <input type="radio" name="genre" value="2">femme</input>
+            <br><br>
+            <label>Niveau ponctialite</label>
+            <input type="number" name="ponctialit"/>
+            <br><br>
+            <label>age </label>
+            <input type="number" name="age"/><br><br>
+            <br><br>
+            <input type="submit" value="predire"/>
+        </form>
+    </body>
+</html>

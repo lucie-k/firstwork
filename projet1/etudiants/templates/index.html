@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My app</title>
+    </head>
+    <body>
+
+        
+        <h1 style="color:blue;text-align:center">Welcome to my app</h1>
+        
+        {% if sexe == "Masculin" %}
+        <p>Bonjour Monsieur {{nom}} {{postnom}}</p>
+        {% elif sexe == "Feminin" %}
+        <p>Bonjour Mademoiselle {{nom}} {{postnom}}</p>
+        {% else %}
+        <p>Bonjour {{nom}} {{postnom}}</p>
+        {% endif %}
+        <a href="loyer">RESERVER UNE PLACE</a>
+    </body>
+</html>
